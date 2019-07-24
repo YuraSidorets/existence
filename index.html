@@ -3,11 +3,40 @@
 
 <head>
     <title>Existence</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="existence.js"></script>
 </head>
 
 <body>
+    <div class="setup">
+
+        <span>Date of birth (YYYY-MM-DD):</span>
+        <input id="dob" size="3" type="text" value="">
+        <input type="button" value="Set Date Of Birth" onclick="setDate();" />
+    </div>
+    <div id="header">
+        <p>
+            Every row contain 3 years (72 weeks)
+            <br>
+            All table contain 90 years (1080 weeks)
+        </p>
+    </div>
+    <div id="sketch-holder">
+    </div>
+    <div id="side">
+        <p>
+            90 years
+        </p>
+    </div>
+    <script>
+        function setDate() {
+            setDob(document.getElementById("dob").value);
+        }
+    </script>
 </body>
 
 </html>

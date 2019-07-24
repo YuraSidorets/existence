@@ -1,0 +1,38 @@
+#sketch-holder {
+    margin: 0;
+    display: flex;
+
+    /* This centers our sketch horizontally. */
+    justify-content: center;
+
+    /* This centers our sketch vertically. */
+    align-items: center;
+}
+
+.setup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#header>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+#side>p {
+    display: inline;
+    margin-bottom: 0px;
+    color: red;
+}
+
+input {
+    margin-left: 10px;
+}
+
+#dob {
+    width: 100px;
+}
