@@ -9,8 +9,11 @@ function setup() {
 }
 
 function draw() {
-    for (let i = 0; i < circles.length; i++) {
-        circles[i].display();
+    for (let i = 0; i < 30; i++) {
+        for (let j = 0; j < 36; j++) {
+            circles[j].setCoordinates(i + 30, j + 30);
+            circles[j].display();
+        }
     }
 }
 
@@ -19,6 +22,11 @@ class Circle {
         this.x = random(width);
         this.y = random(height);
         this.diameter = 30;
+    }
+
+    setCoordinates(x, y) {
+        this.x = x;
+        this.y = y;
     }
 
     display() {
